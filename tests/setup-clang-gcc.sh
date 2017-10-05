@@ -1,0 +1,3 @@
+export PATH=/work/global/nks45/PUENGINE-RISCV-LLVM-TOOLCHAIN/bin/:/home/nks45/RISCV-ISA-SIM/bin:$PATH
+
+export CPATH="/work/global/nks45/PUENGINE-RISCV-LLVM-TOOLCHAIN/riscv64-unknown-elf/include/c++/7.1.1/:/work/global/nks45/PUENGINE-RISCV-LLVM-TOOLCHAIN/riscv64-unknown-elf/include/c++/7.1.1/riscv64-unknown-elf/:/work/global/nks45/PUENGINE-RISCV-LLVM-TOOLCHAIN/riscv64-unknown-elf/include:/work/global/nks45/PUENGINE-RISCV-LLVM-TOOLCHAIN/riscv32-unknown-elf/include/c++/7.1.1/:/work/global/nks45/PUENGINE-RISCV-LLVM-TOOLCHAIN/riscv32-unknown-elf/include/c++/7.1.1/riscv32-unknown-elf/:/work/global/nks45/PUENGINE-RISCV-LLVM-TOOLCHAIN/riscv32-unknown-elf/include"
