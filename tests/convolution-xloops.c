@@ -12,15 +12,17 @@
 
 void  __attribute__ ((noinline)) convolution_xloops( int* I, int* O, int* W, int N1, int K1)
 {
+  int o;
   for ( int y = 0; y < N1-K1+1; y++ ) {
     for ( int x = 0; x < N1-K1+1; x++ ) {
-      O[y*(N1-K1+1)+x] = 0;
+      o = 0;
       #pragma unordered_for
       for ( int ky = 0; ky < K1; ky++ ) {
         for ( int kx = 0; kx < K1; kx++ ) {
-          O[y*(N1-K1+1)+x] += I[(y+ky)*N1+x+kx] * W[ky*K1+kx];
+          o += I[(y+ky)*N1+x+kx] * W[ky*K1+kx];
         }
       }
+      O[y*(N1-K1+1)+x] = o;
     }
   }
 }
